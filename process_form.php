@@ -31,7 +31,7 @@ $sql = "INSERT INTO registrations (name, age, gender, height, weight, package, p
 // Execute query
 if ($conn->query($sql) === TRUE) {
     // Registration successful, redirect to login page
-    header("Location: login.html");
+    header("Location: index.html");
     exit(); // Stop further execution of PHP script
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error; // Provide error message if registration fails
